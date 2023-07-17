@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContact, deleteContact } from './contactsOperations';
-import { refreshUser } from './auth/authOperations';
+
 
 const initialState = {
   items: [],
   isLoading: false,
   error: null,
-  isRefreshing:false,
+  
 };
 const handlePending = state => {
   state.isLoading = true;
@@ -46,17 +46,7 @@ export const contactsSlice = createSlice({
       state.items.splice(index, 1);
     })
     .addCase(deleteContact.rejected,handleRejected)
-   .addCase(refreshUser.pending,(state)=> {
-    state.isRefreshing = true;
-  })
-   .addCase(refreshUser.fulfilled,(state, action)=> {
-    state.user = action.payload;
-    state.isLoggedIn = true;
-    state.isRefreshing = false;
-  })
-   .addCase(refreshUser.rejected,(state)=> {
-    state.isRefreshing = false;
-  })
+   
     
     
  
