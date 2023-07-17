@@ -31,11 +31,13 @@ function ContactForm() {
         `${newContact.name} or ${newContact.number} is already in contacts`
       );
     }
-
+   
     dispatch(addContact(newContact));
+
     // toast.success(`${name} added in contacts`);
     reset();
   };
+ 
   const reset = () => {
     setName('');
     setNumber('');
