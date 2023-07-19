@@ -12,7 +12,6 @@ export default function Login() {
     const email = e.target.elements.email.value;
     const password = e.target.elements.password.value;
     dispatch(logIn({ email, password }));
-  
   };
 
   return (
