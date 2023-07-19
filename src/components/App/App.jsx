@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from 'pages/Home';
-import Login from 'pages/Login';
-import Register from 'pages/Register';
-import Contacts from 'pages/Contacts';
+// import Home from 'pages/Home';
+// import Login from 'pages/Login';
+// import Register from 'pages/Register';
+// import Contacts from 'pages/Contacts';
 import { Layout } from 'components/Layout';
 import Container from '@mui/material/Container';
 import { PrivateRoute } from 'components/PrivateRoute';
