@@ -1,7 +1,4 @@
 import { useDispatch } from 'react-redux';
-import { UserMenuContainer, UserEmail, LogOutButton } from './UserMenu.styled';
-import { FiLogOut } from 'react-icons/fi';
-import { TiUser } from 'react-icons/ti';
 import { logOut } from 'redux/auth/authOperations';
 import { useAuth } from 'hooks/useAuth';
 
