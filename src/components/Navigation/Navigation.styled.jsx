@@ -6,8 +6,12 @@ export const Nav=styled(NavLink)`
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
-  color: #2a363b;
-.active {
-  color: #e84a5f;
+  color: #ffff;
+  &.active {
+  color: #030000;
+  font-size:20px;
+  :hover {
+    transform: scale(1.1);
+  }
 }
 `;

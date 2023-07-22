@@ -4,6 +4,7 @@ export const UserMenuContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 25px;
+border-radius:12px;
 `;
 
 export const UserEmail = styled.p`
@@ -32,5 +33,22 @@ align-items: center;
   :hover,
   :focus {
     transform: scale(1.25)
+  }
+`;
+export const Text=styled.p`
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+`;
+export const Button=styled.button`
+width:75px;
+height:30px;
+margin-right:10px;
+border-radius: 5px;
+:hover {
+    border-color:#ffff;
+    background-color:rgba(12, 4, 35, 0.1);
+    color:#ffff;
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,1);
   }
 `;

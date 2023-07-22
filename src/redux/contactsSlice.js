@@ -45,14 +45,8 @@ export const contactsSlice = createSlice({
       );
       state.items.splice(index, 1);
     })
-    .addCase(deleteContact.rejected,handleRejected)
-   
-    
-    
- 
-    },
-   
-  
+    .addCase(deleteContact.rejected,handleRejected) 
+    },  
 });
 
 export const contactReducer = contactsSlice.reducer;
